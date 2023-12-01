@@ -61,10 +61,10 @@
     <Compile Include="DataBuffer.cs" />
     <Compile Include="MemoryChunk.cs" />
     <Compile Include="MemoryMap.cs" />
-    <Compile Include="xLoader2.cs" />
-    <EmbeddedResource Include="xLoader2.resx">
-      <DependentUpon>xLoader2.cs</DependentUpon>
+    <EmbeddedResource Include="github.png">
+      <LogicalName>github.png</LogicalName>
     </EmbeddedResource>
+    <Compile Include="xLoader2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

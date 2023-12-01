@@ -30,7 +30,6 @@ class xLoader2:Form {
     public const string AppAuthor = "Artur Kurpukov";
     public const string AppCopyright = "Copyright (C) 2021-2023 Artur Kurpukov";
     
-    private readonly ResourceManager _resources = new ResourceManager(typeof(xLoader2));
     private readonly IContainer _components = new Container();
     
     private readonly SerialPort _serialPort1;
@@ -685,7 +684,7 @@ class xLoader2:Form {
         button4.Enabled = true;
         button4.FlatAppearance.BorderSize = 0;
         button4.FlatStyle = FlatStyle.Flat;
-        button4.Image = (Image)_resources.GetObject("github");
+        button4.Image = new Bitmap(typeof(xLoader2), "github.png");
         button4.Size = new Size(24, 24);
         button4.TabIndex = 2;
         button4.TabStop = false;
